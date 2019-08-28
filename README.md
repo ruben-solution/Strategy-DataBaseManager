@@ -1,4 +1,4 @@
-# Strategy-DataBaseManager
+# Strategy-DatabaseManager
 
 Implementation of database manager with the "strategy" design pattern
 
