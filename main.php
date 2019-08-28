@@ -2,9 +2,9 @@
 
 require_once __DIR__ . '/SQLStrategyInterface.php';
 require_once __DIR__ . '/MySQLConn.php';
-require_once __DIR__ . '/DataBaseManager.php';
+require_once __DIR__ . '/DatabaseManager.php';
 
-$c = new DataBaseManager(
+$c = new DatabaseManager(
     new MySQLConn(
         'localhost',
         'root',
