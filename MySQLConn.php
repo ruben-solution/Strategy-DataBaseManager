@@ -65,6 +65,11 @@ class MySQLConn implements SQLStrategy
         $this->setNames($names);
     }
 
+    /**
+     * Sets character set for connection
+     *
+     * @param string $names
+     */
     private function setNames($names): void
     {
         $names = strtolower($names);
@@ -116,6 +121,14 @@ class MySQLConn implements SQLStrategy
         return $result;
     }
 
+    /**
+     * Function for changing data in database
+     *
+     * @param string $query
+     * @param array  $params
+     *
+     * @return bool
+     */
     public function change($query, $params): bool
     {
         $stmt = $this->conn->prepare($query);
